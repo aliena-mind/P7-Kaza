@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); /* importation de la police 'Montserrat' */
+
+.header {
+    width: 335px;
+    height: 47px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-kaza{
+    width: 145px; 
+    height: 47px;   
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    padding-left: 10px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    
+    color: #FF6060;
+}
+
+

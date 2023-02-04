@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom' // importation du module ReactDOM
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom' // importation du router et de(s) route(s)
 
 // importation des differents éléments du site :
-import Header from './components/Header'
+import Header from './layout/Header'
 import Home from './pages/Home' 
 import About from './pages/About'
 import Error from './components/Error'
