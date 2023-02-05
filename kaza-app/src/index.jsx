@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client' // importation du module ReactDOM
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom' // importation du router et de(s) route(s)
 
 import './styles/reset/reset.css' // importation du reset CSS
+import './styles/full-page/index.css' // importation du CSS général pour toute la page
 
 // importation des différents éléments du site :
 import Header from './layout/Header'
@@ -15,12 +16,14 @@ import Error from './components/Error'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
-      <Header /> 
-      <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="*" element={<Error/>} />
-      </Routes>
+      <div className='container'>
+        <Header /> 
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="*" element={<Error/>} />
+        </Routes>
+      </div>
     </Router>
   </React.StrictMode>
 );
