@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client' // importation du module ReactDOM
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom' // importation du router et de(s) route(s)
 
 import './styles/reset/reset.css' // importation du reset CSS
-import './styles/full-page/index.css' // importation du CSS général pour toute la page
+import './styles/container/index.css' // importation du CSS général pour toute la page
 
 // importation des différents éléments du site :
 import Header from './layout/Header'

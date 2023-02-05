@@ -1,0 +1,12 @@
+* {
+    font-family: 'Montserrat';
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
