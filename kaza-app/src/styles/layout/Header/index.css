@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); /* importation de la police 'Montserrat' */
 
+* {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
 .header {
-    width: 335px;
     height: 47px;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 
     display: flex;
     justify-content: space-between;
@@ -23,8 +27,6 @@
 .nav-link {
     padding-left: 10px;
     
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
