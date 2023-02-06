@@ -9,6 +9,7 @@ import './styles/container/index.css' // importation du CSS général pour toute
 // importation des différents éléments du site :
 import Header from './layout/Header'
 import Home from './pages/Home' 
+import House from './pages/House'
 import About from './pages/About'
 import Error from './components/Error'
 
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Header /> 
         <Routes>
           <Route exact path="/" element={<Home/>} />
+          <Route exact path="/house/:id" element={<House/>} />
           <Route path="/about" element={<About/>} />
           <Route path="*" element={<Error/>} />
         </Routes>

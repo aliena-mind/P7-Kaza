@@ -1,16 +1,16 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../assets/logo/logo.svg'
 import '../../styles/layout/Header/index.css'
  
 function Header() {
     return (
         <div className='header'>
-            <Link to="/">
+            <NavLink to="/">
                 <img className='logo-kaza' src={logo} alt="Logo Kasa"/>
-            </Link>
+            </NavLink>
             <nav className='nav'>
-                <Link className='nav-link' to="/">ACCUEIL</Link>
-                <Link className='nav-link' to="/about">À PROPOS</Link>
+                <NavLink className='nav-link' to="/">ACCUEIL</NavLink>
+                <NavLink className='nav-link' to="/about">À PROPOS</NavLink>
             </nav>
         </div>
     )

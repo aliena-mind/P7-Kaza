@@ -7,7 +7,7 @@ function Cards() {
 	return (
         <div className="card-container">
             {housingList.map((house) => (
-                <Link to={`/houses/:${house.id}`} className="card" key={house.id}>
+                <Link to={`/house/${house.id}`} className="card" key={house.id}>
                     <ul>
                         <li className="card-cover-container">
                             <img className='card-cover' src={house.cover} alt={`${house.title} cover`} />

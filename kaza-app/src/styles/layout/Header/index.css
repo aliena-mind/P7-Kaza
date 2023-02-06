@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap'); /* importation de la police 'Montserrat' */
 
 .header {
-    height: 47px;
     padding: 20px 20px 0 20px;
 
     display: flex;
