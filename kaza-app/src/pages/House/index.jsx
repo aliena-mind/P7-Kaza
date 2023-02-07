@@ -5,7 +5,7 @@ import housingList from "../../datas/housingList" // importation des datas "hous
 function House() {
     const { id } = useParams(window.location.href) // récupère le paramètre id dans l'url
 
-    const houseElement = housingList.find((object) => object.id === id) // cherche l'objet de meme id 
+    const houseElement = housingList.find((object) => object.id === id) // cherche l'objet de meme id disponible dans 'housingList'
 
     return (
         <div>
