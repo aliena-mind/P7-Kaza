@@ -4,11 +4,10 @@ import Banner from '../../components/Banner'; // importation du composant Banner
 import banner from '../../assets/banner/banner-home.png' // importation de l'image de la bannière
 import Cards from '../../components/Cards' // importation du component "Cards"
 
-
 function Home() {
   return (
     <div className="home">
-      <Banner image={banner} />
+      <Banner image={banner} className="home-banner-container"/> {/* props 'image' et 'className' */}
       <Cards />
     </div>
   );
