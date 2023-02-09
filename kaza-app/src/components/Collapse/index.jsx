@@ -21,7 +21,7 @@ function Collapse(props) {
             </button>
             {showContent && ( // affiche le contenu de 'collapse-content' si 'showContent' est 'true'
                 <div className='collapse-content'> {/* ajout de la classe 'show-content' si 'showContent' est 'true'  */}
-                    Contenu à afficher ou masquer
+                    {props.content} {/* 'content' transmis via les "props" */}
                 </div>
             )}
         </div>
