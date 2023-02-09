@@ -6,6 +6,7 @@
 
 .container {
     max-width: 1420px;
+    min-height: 71vh;
     margin: 0 auto;
     padding: 0;
 }
