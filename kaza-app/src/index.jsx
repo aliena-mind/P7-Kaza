@@ -12,6 +12,7 @@ import Home from './pages/Home'
 import House from './pages/House'
 import About from './pages/About'
 import Error from './components/Error'
+import Footer from './layout/Footer'
 
 // affichage des éléments :
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="*" element={<Error/>} />
         </Routes>
       </div>
+      <Footer /> 
     </Router>
   </React.StrictMode>
 );
