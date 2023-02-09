@@ -13,7 +13,7 @@ function Collapse(props) {
         <div className="collapse-container">
             <button onClick={() => setShowContent(!showContent)}>  {/* inverse la valeur de 'showContent' lors du click */}
                 {props.text} {/* 'text' transmis via les "props" */}
-                {showContent ? (
+                {showContent ? ( 
                     <img className='collapse-image' src={collapseOpen} alt="collapseOpen" /> // si 'showContent' est 'true', l'image est 'collapseOpen'
                 ) : (
                     <img className='collapse-image' src={collapseClose} alt="collapseClose" /> // si 'showContent' est 'false', l'image est 'collapseClose'

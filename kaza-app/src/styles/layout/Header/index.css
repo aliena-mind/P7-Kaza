@@ -28,6 +28,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
+
     text-decoration: none;
 
     display: block;
@@ -48,10 +49,29 @@
     .header {
         padding: 40px 40px 0 40px;
     }
+
+    .nav-link {
+        padding-left: 30px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 @media (min-width: 1420px) {
     .header {
         padding: 40px 100px 60px 100px;
+    }
+
+    .logo-kaza {
+        width: 210px; 
+        height: 68px;   
+    }
+
+    .nav-link {
+        padding-left: 57px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 34px;
     }
 }
