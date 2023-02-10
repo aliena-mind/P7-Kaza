@@ -1,0 +1,43 @@
+.house-description {
+    padding: 0 20px;
+}
+
+.house-title {
+    padding-bottom: 5px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #FF6060;
+}
+
+.house-location {
+    padding-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FF6060;
+}
+
+.tags {
+    border: 2px solid blue;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    border: 2px solid red;
+    width: 84px;
+
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
