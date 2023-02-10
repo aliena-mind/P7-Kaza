@@ -31,8 +31,14 @@ function House() {
                             <div className='tag' key={tag}>{tag}</div>
                         ))}
                     </div>
-                    <Collapse text='Description' content={houseElement.description}/> {/* 'text' envoyé via les props */}
-                    <Collapse text='Équipements' content={houseElement.equipments.join(', ')} /> 
+                    <div className='house-collapse'>
+                        <div>
+                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' envoyé via les props */}
+                        </div>
+                        <div>
+                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments.join(', ')} /> 
+                        </div>
+                    </div>
                 </div>
             </div>
         )
