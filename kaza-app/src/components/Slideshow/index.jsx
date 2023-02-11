@@ -1,6 +1,8 @@
-import { useState } from 'react';
-import '../../styles/components/Slideshow/index.css'
+import { useState } from 'react'; // importation de 'useState'
 
+import '../../styles/components/Slideshow/index.css' // importation du fichier CSS
+
+// importation des images requises :
 const slideshowPrevious = require('../../assets/slideshow/slideshow-previous.png');
 const slideshowNext = require('../../assets/slideshow/slideshow-next.png');
 

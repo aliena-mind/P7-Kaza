@@ -1,22 +1,31 @@
-import redStar from '../../assets/stars/red-star.png';
-import greyStar from '../../assets/stars/grey-star.png';
-import'../../styles/components/Ratings/index.css';
+import'../../styles/components/Ratings/index.css' // importation du fichier CSS
 
-const Stars = (props) => {
+// importation des images requises :
+const redStar = require('../../assets/stars/red-star.png'); 
+const greyStar = require('../../assets/stars/grey-star.png');
 
-  let stars = [];
+const Stars = (props) => { // fonction avec argument 'props'
 
-    for (let i = 0; i < 5; i++) { // boucle 5 fois :
-        if (i < props.rating) { // si i inférieur à 'props.rating' :
-            stars.push(<img src={redStar} alt='red star' key={i} />); // ajoute une image 'redStar' au tableau 'stars'
+    let stars = [];
+
+    // boucle 5 fois (5 étoiles) :
+    for (let i = 0; i < 5; i++) { 
+
+        if (i < props.rating) { // si 'i' inférieur à 'props.rating' :
+
+            // ajoute une image 'redStar' au tableau 'stars'
+            stars.push(<img src={redStar} alt='red star' key={i} />); 
+
         } else { // sinon :
-            stars.push(<img src={greyStar} alt='grey star' key={i} />); // ajoute une image 'greyStar' au tableau 'stars'
+
+            // ajoute une image 'greyStar' au tableau 'stars'
+            stars.push(<img src={greyStar} alt='grey star' key={i} />); 
         }
     }
 
     return (
         <div className='stars'>
-            {stars}
+            {stars} 
         </div>
     );
 };

@@ -1,5 +1,6 @@
-import logo from '../../assets/logo/logo-footer.webp'
-import '../../styles/layout/Footer/index.css'
+import '../../styles/layout/Footer/index.css' // importation du fichier CSS
+
+const logo = require('../../assets/logo/logo-footer.webp'); // importation du logo requise
 
 function Footer() {
     return (

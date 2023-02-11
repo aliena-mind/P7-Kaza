@@ -1,13 +1,17 @@
-import '../../styles/pages/Home/index.css' // importation du CSS de la page
+import '../../styles/pages/Home/index.css' // importation du fichier CSS
 
-import Banner from '../../components/Banner'; // importation du composant Banner
-import banner from '../../assets/banner/banner-home.webp' // importation de l'image de la bannière
-import Cards from '../../components/Cards' // importation du component "Cards"
+// importation des composants :
+import Banner from '../../components/Banner'; 
+import Cards from '../../components/Cards' 
 
 function Home() {
+
+  // importation de l'image de la bannière
+  const banner = require('../../assets/banner/banner-home.webp'); 
+
   return (
     <div className="home">
-      <Banner image={banner} className="home-banner-container"/> {/* props 'image' et 'className' */}
+      <Banner image={banner} className="home-banner-container"/> {/* props 'image' */}
       <div className='text-container'>
         <p className='banner-text'>Chez vous, partout et ailleurs </p>
       </div>

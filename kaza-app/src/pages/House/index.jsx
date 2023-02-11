@@ -1,16 +1,21 @@
-import { useEffect } from 'react'
-import { useParams, useNavigate } from "react-router-dom"
+import { useEffect } from 'react' // importation de 'useEffect' 
+import { useParams, useNavigate } from "react-router-dom" // importation de 'useParams' & 'useNavigate'
+
 import housingList from "../../datas/housingList" // importation des datas 'housingList'
-import Slideshow from "../../components/Slideshow" // importation du composant 'SlideShow'
-import Ratings from '../../components/Ratings' // importation du composant 'Ratings'
-import Collapse from '../../components/Collapse' // importation du composant 'Collapse'
-import '../../styles/pages/House/index.css' // importation du CSS
+
+// importation des composants : 
+import Slideshow from "../../components/Slideshow" 
+import Ratings from '../../components/Ratings' 
+import Collapse from '../../components/Collapse' 
+
+import '../../styles/pages/House/index.css' // importation du fichier CSS
 
 
 function House() {
     const { id } = useParams(window.location.href) // récupère le paramètre id dans l'url
 
-    const houseElement = housingList.find((house) => house.id === id) // cherche 'house' de meme id disponible dans 'housingList'
+    // houseElement = 'house' de meme 'id' disponible dans 'housingList' :
+    const houseElement = housingList.find((house) => house.id === id) 
     
     let navigate = useNavigate();
 
@@ -28,17 +33,20 @@ function House() {
                     <h1 className='house-title'> { houseElement.title } </h1> {/* props 'title' de 'houseElement' */}
                     <p className='house-location'> { houseElement.location }</p> {/* props 'location' de 'houseElement' */}
                     <div className='tags'>
-                        {houseElement.tags.map(tag => ( // pour chaque 'tag' parmi 'tags' comprise dans 'houseElement' :
+                        {houseElement.tags.map(tag => ( // pour chaque 'tag' parmi 'tags' compris dans 'houseElement' :
                             <div className='tag' key={tag}>{tag}</div>
                         ))}
                     </div>
                     <Ratings rating={houseElement.rating}/>
                     <div className='house-collapse'>
                         <div>
-                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' & 'content' envoyé via les props */}
+
+                            {/* 'text' & 'content' envoyé via les props */}
+                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> 
                         </div>
                         <div>
-                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments} /> {/* 'text' & 'content' envoyé via les props */}
+                            {/* 'text' & 'content' envoyé via les props */}
+                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments} /> 
                         </div>
                     </div>
                 </div>

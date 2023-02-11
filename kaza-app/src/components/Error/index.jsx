@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
-import '../../styles/components/Error/index.css'
+import { Link } from 'react-router-dom' // importation de 'Link'
+
+import '../../styles/components/Error/index.css' // importation du fichier CSS
 
 function Error() {
     return (

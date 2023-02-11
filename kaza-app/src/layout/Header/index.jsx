@@ -1,7 +1,9 @@
-import { NavLink } from 'react-router-dom'
-import logo from '../../assets/logo/logo-header.webp'
-import '../../styles/layout/Header/index.css'
+import { NavLink } from 'react-router-dom' // importation de 'NavLink'
+
+import '../../styles/layout/Header/index.css' // importation du fichier CSS
  
+const logo = require('../../assets/logo/logo-header.webp'); // importation du logo requise
+
 function Header() {
     return (
         <div className='header'>
