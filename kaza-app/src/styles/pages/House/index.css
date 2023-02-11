@@ -54,6 +54,9 @@
 }
 
 @media (min-width: 700px) {
+    .house {
+        padding: 0 20px;
+    }
     .tag {
         width: 115px;
         height: 25px;

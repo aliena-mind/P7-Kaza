@@ -6,6 +6,10 @@ const collapseClose = require('../../assets/collapse/collapse-close.png');
 
 function Collapse(props) {
 
+    console.log('props.content');
+    console.log(typeof props.content);
+    console.log(props.content);
+
     // définit l'état 'showContent' initialisé à 'true' (contenu visible)
     const [showContent, setShowContent] = useState(true); 
 
@@ -22,8 +26,16 @@ function Collapse(props) {
                 )}
             </button>
             {showContent && ( // affiche le contenu de 'collapse-content' si 'showContent' est 'true'
-                <div className='collapse-content'> 
-                    {props.content} {/* 'content' transmis via les "props" */}
+                <div className='collapse-content'>
+                    {Array.isArray(props.content) ? ( // si props.content est un 'Array' :
+                        <ul>
+                            {props.content.map((item, index) => ( // pour chaque item de 'props.content' :
+                                <li key={index}>{item}</li> 
+                            ))}
+                        </ul>
+                    ) : ( // sinon :
+                        props.content 
+                    )}
                 </div>
             )}
         </div>

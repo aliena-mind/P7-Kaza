@@ -21,7 +21,7 @@ function House() {
 
     if (houseElement) {
         return (
-            <div>
+            <div className='house'>
                 <Slideshow pictures= { houseElement.pictures }/> {/* props 'picture' de 'houseElement' */}
                 <div className='house-description'>
                     <h1 className='house-title'> { houseElement.title } </h1> {/* props 'title' de 'houseElement' */}
@@ -36,7 +36,7 @@ function House() {
                             <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' & 'content' envoyé via les props */}
                         </div>
                         <div>
-                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments.join(', ')} /> {/* 'text' & 'content' envoyé via les props */}
+                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments} /> {/* 'text' & 'content' envoyé via les props */}
                         </div>
                     </div>
                 </div>
