@@ -33,10 +33,10 @@ function House() {
                     </div>
                     <div className='house-collapse'>
                         <div>
-                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' envoyé via les props */}
+                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' & 'content' envoyé via les props */}
                         </div>
                         <div>
-                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments.join(', ')} /> 
+                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments.join(', ')} /> {/* 'text' & 'content' envoyé via les props */}
                         </div>
                     </div>
                 </div>

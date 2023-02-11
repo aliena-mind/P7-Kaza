@@ -55,6 +55,7 @@
 
 @media (min-width: 700px) {
     .tag {
+        width: 115px;
         height: 25px;
 
         font-size: 14px;
@@ -77,5 +78,8 @@
     .house-location {
         font-size: 18px;
         line-height: 26px;
+    }
+    .tags {
+        margin-bottom: 25px;
     }
 }

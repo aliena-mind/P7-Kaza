@@ -6,21 +6,23 @@ const collapseClose = require('../../assets/collapse/collapse-close.png');
 
 function Collapse(props) {
 
-    // définit l'état 'showContent' initialisé à 'false' (contenu masqué)
-    const [showContent, setShowContent] = useState(false); 
+    // définit l'état 'showContent' initialisé à 'true' (contenu visible)
+    const [showContent, setShowContent] = useState(true); 
 
     return (
         <div className="collapse-container">
             <button onClick={() => setShowContent(!showContent)}>  {/* inverse la valeur de 'showContent' lors du click */}
                 {props.text} {/* 'text' transmis via les "props" */}
                 {showContent ? ( 
-                    <img className='collapse-image' src={collapseOpen} alt="collapseOpen" /> // si 'showContent' est 'true', l'image est 'collapseOpen'
+                    // si 'showContent' est 'true', l'image est 'collapseOpen'
+                    <img className='collapse-image' src={collapseOpen} alt="collapseOpen" /> 
                 ) : (
-                    <img className='collapse-image' src={collapseClose} alt="collapseClose" /> // si 'showContent' est 'false', l'image est 'collapseClose'
+                    // si 'showContent' est 'false', l'image est 'collapseClose'
+                    <img className='collapse-image' src={collapseClose} alt="collapseClose" /> 
                 )}
             </button>
             {showContent && ( // affiche le contenu de 'collapse-content' si 'showContent' est 'true'
-                <div className='collapse-content'> {/* ajout de la classe 'show-content' si 'showContent' est 'true'  */}
+                <div className='collapse-content'> 
                     {props.content} {/* 'content' transmis via les "props" */}
                 </div>
             )}

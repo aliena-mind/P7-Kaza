@@ -39,7 +39,7 @@
 
 .nav-link.active {
     text-decoration: underline;
-    }
+}
 
 .nav-link:focus {
     outline: none;
