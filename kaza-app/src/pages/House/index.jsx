@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, useNavigate } from "react-router-dom"
 import housingList from "../../datas/housingList" // importation des datas 'housingList'
 import Slideshow from "../../components/Slideshow" // importation du composant 'SlideShow'
+import Ratings from '../../components/Ratings' // importation du composant 'Ratings'
 import Collapse from '../../components/Collapse' // importation du composant 'Collapse'
 import '../../styles/pages/House/index.css' // importation du CSS
 
@@ -31,6 +32,7 @@ function House() {
                             <div className='tag' key={tag}>{tag}</div>
                         ))}
                     </div>
+                    <Ratings rating={houseElement.rating}/>
                     <div className='house-collapse'>
                         <div>
                             <Collapse className='house-collapse' text='Description' content={houseElement.description}/> {/* 'text' & 'content' envoyé via les props */}
