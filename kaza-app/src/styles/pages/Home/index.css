@@ -16,7 +16,14 @@
     width: 100%;
     height: 100%;
 
+    opacity: 70%;
+
     object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-container {
+    background: #000000;
     border-radius: 10px;
 }
 
@@ -46,6 +53,10 @@
         padding: 0 40px 40px 40px;
     }
 
+    .text-container {
+        margin: 0 40px;
+    }
+
     .banner-text {
         width: 100%;
         height: 180px;
@@ -70,8 +81,14 @@
         padding: 0 0 40px 0;
     }
 
+    .text-container {
+        margin: 0;
+    }
+
     .banner-text {
-        padding-top: 50px;
+        height: 183px;
+        margin-top: -223px;
+        padding-top: 55px;
         font-size: 48px;
         line-height: 68px;
     }
