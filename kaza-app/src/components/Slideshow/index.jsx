@@ -49,6 +49,9 @@ function Slideshow(props) {
                     </>
                 )}
             </div>
+            <div className="slideshow-number">
+                {currentIndex + 1}/{props.pictures.length}
+            </div>
         </div>
     )
 }

@@ -40,6 +40,21 @@
     height: 19.8px;
 }
 
+.slideshow-number {
+    margin-top: -40px;
+    margin-bottom: 15px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: white;
+
+    text-align: center;
+
+    position: relative;
+}
+
 @media (min-width: 700px) {
     .pictures-container {
         height: 350px;
@@ -74,5 +89,9 @@
     .slide-button-img {
         width: 46.68px;
         height: 79.2px;
+    }
+    .slideshow-number {
+        margin-top: -100px;
+        margin-bottom: 50px;
     }
 }
