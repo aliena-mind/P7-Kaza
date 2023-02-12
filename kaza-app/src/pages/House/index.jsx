@@ -29,27 +29,37 @@ function House() {
         return (
             <div className='house'>
                 <Slideshow pictures= { houseElement.pictures }/> {/* props 'picture' de 'houseElement' */}
-                <div className='house-description'>
-                    <h1 className='house-title'> { houseElement.title } </h1> {/* props 'title' de 'houseElement' */}
-                    <p className='house-location'> { houseElement.location }</p> {/* props 'location' de 'houseElement' */}
-                    <div className='tags'>
-                        {houseElement.tags.map(tag => ( // pour chaque 'tag' parmi 'tags' compris dans 'houseElement' :
-                            <div className='tag' key={tag}>{tag}</div>
-                        ))}
+                <div className='house-description-ratings'>
+                    <div className='house-description'>
+                        <h1 className='house-title'> { houseElement.title } </h1> {/* props 'title' de 'houseElement' */}
+                        <p className='house-location'> { houseElement.location }</p> {/* props 'location' de 'houseElement' */}
+                        <div className='tags'>
+                            {houseElement.tags.map(tag => ( // pour chaque 'tag' parmi 'tags' compris dans 'houseElement' :
+                                <div className='tag' key={tag}>{tag}</div>
+                            ))}
+                        </div>
                     </div>
-                    <Ratings rating={houseElement.rating}/>
-                    <div className='house-collapse'>
-                        <div>
-
-                            {/* 'text' & 'content' envoyé via les props */}
-                            <Collapse className='house-collapse' text='Description' content={houseElement.description}/> 
+                    <div className='house-ratings-host'>
+                        <div className='host'>
+                            <p>{houseElement.host.name}</p>
+                            <img className='host-image' src={houseElement.host.picture} alt="Host" />
                         </div>
-                        <div>
-                            {/* 'text' & 'content' envoyé via les props */}
-                            <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments} /> 
-                        </div>
+                        <Ratings rating={houseElement.rating}/>
                     </div>
                 </div>
+                    
+                <div className='house-collapse'>
+                    <div>
+
+                        {/* 'text' & 'content' envoyé via les props */}
+                        <Collapse className='house-collapse' text='Description' content={houseElement.description}/> 
+                    </div>
+                    <div>
+                        {/* 'text' & 'content' envoyé via les props */}
+                        <Collapse className='house-collapse' text='Équipements' content={houseElement.equipments} /> 
+                    </div>
+                </div>
+                
             </div>
         )
     }

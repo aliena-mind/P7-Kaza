@@ -14,12 +14,12 @@ const Stars = (props) => { // fonction avec argument 'props'
         if (i < props.rating) { // si 'i' inférieur à 'props.rating' :
 
             // ajoute une image 'redStar' au tableau 'stars'
-            stars.push(<img src={redStar} alt='red star' key={i} />); 
+            stars.push(<img className='star' src={redStar} alt='red star' key={i} />); 
 
         } else { // sinon :
 
             // ajoute une image 'greyStar' au tableau 'stars'
-            stars.push(<img src={greyStar} alt='grey star' key={i} />); 
+            stars.push(<img className='star' src={greyStar} alt='grey star' key={i} />); 
         }
     }
 
