@@ -141,6 +141,9 @@
     .tags {
         margin-bottom: 25px;
     }
+    .host>p {
+        padding-top: 5px;
+    }
     .host-image {
         width: 64px;
         height: 64px;
