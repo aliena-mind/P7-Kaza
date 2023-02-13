@@ -47,7 +47,6 @@ function House() {
                         <Ratings rating={houseElement.rating}/>
                     </div>
                 </div>
-                    
                 <div className='house-collapse'>
                     <div>
 

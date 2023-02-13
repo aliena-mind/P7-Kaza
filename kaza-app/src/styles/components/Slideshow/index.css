@@ -1,5 +1,7 @@
 .slideshow {
+    width: 100%;
     padding: 30px 20px 15px 20px;
+    position: relative;
 }
 
 .pictures-container {
@@ -18,19 +20,24 @@
     border-radius: 25px;
     object-fit: cover;
 }
-
 .button-container {
-    margin-top: -140px;
-    margin-bottom: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow-buttons {
+    width: 100%;
+    padding: 0 20px;
 
-    position: relative;
+    position: absolute;
+    top: 140px;
 
     display: flex;
     justify-content: space-between;
 }
-
 .slide-button {
     padding: 10px;
+
     border: none;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -39,30 +46,29 @@
     width: 11.67px;
     height: 19.8px;
 }
-
 .slideshow-number {
-    margin-top: -40px;
-    margin-bottom: 15px;
-    
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
+    width: 100%;
 
     color: white;
-
+    
     text-align: center;
+    position: absolute;
 
-    position: relative;
+    top: 120px;
 }
 
+
 @media (min-width: 700px) {
+    .slideshow { 
+        padding-bottom: 30px;
+    }
     .pictures-container {
         height: 350px;
     }
-    .button-container {
-        margin-top: -200px;
-        margin-bottom: 140px;
+    .slideshow-buttons {
+        top: 180px;
     }
+    
     .slide-button {
         padding: 10px 20px;
     }
@@ -70,18 +76,17 @@
         width: 23.34px;
         height: 39.6px;
     }
+    .slideshow-number { 
+        top: 170px;
+    }
 }
 
 @media (min-width: 1420px) {
     .slideshow {
-        padding: 0 20px;
+        padding: 0 20px 30px 20px;
     }
     .pictures-container {
         height: 415px;
-    }
-    .button-container {
-        margin-top: -250px;
-        margin-bottom: 209px;
     }
     .slide-button {
         padding: 10px 25px;
@@ -91,7 +96,6 @@
         height: 79.2px;
     }
     .slideshow-number {
-        margin-top: -100px;
-        margin-bottom: 50px;
+        top: 200px;
     }
 }

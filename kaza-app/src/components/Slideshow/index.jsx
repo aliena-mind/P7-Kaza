@@ -40,17 +40,19 @@ function Slideshow(props) {
                 {/* Si props.pictures.length > 1, alors les boutons seront affichés */}
                 {props.pictures.length > 1 && (
                     <> {/* raccourci création d'un élément React vide, 'Fragment', les boutons seront ajouté à l'élément parent */}
+                    <div className='slideshow-buttons'>
                         <button className="slide-button" onClick={previousSlide}> 
                             <img className='slide-button-img' src={slideshowPrevious} alt="Précédent" />
                         </button>
                         <button className="slide-button" onClick={nextSlide}>
                             <img className='slide-button-img' src={slideshowNext} alt="Suivant" />
                         </button>
+                        <div className="slideshow-number">
+                            {currentIndex + 1}/{props.pictures.length}
+                        </div>
+                    </div>
                     </>
                 )}
-            </div>
-            <div className="slideshow-number">
-                {currentIndex + 1}/{props.pictures.length}
             </div>
         </div>
     )
