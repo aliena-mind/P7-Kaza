@@ -39,10 +39,6 @@
     text-decoration: underline;
 }
 
-.nav-link:focus {
-    outline: none;
-}
-
 @media (min-width: 700px) {
     .header {
         padding: 40px 40px 0 40px;
